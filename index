@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Coded by Caroline Juang, January 2016, for Harvard Forest -->
+<!-- Adapted from code by Annie Lin, January 2015 -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn about the rich history and science of Harvard Forest through this virtual tour of the French Road Trail.">
+    <meta name="author" content="Harvard Forest">
+    <meta name="robots" content="NOODP">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+
+    <title>French Road Virtual Tour</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Font-Awesome Icons -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+    <!-- The Main Display -->
+    <section>
+        <div class="container">
+            <!-- Beginning of Row 1 -->
+            <div class="row text-center">
+                <!--Beginning of intro -->
+                <div class="col-sm-12">
+                    <br><a href="http://harvardforest.fas.harvard.edu/" target="_blank"><img class="img-responsive center-img" src="img/logo.jpg"></a>
+
+                    <h1>Harvard Forest French Road Trail</h1>
+                    <p><h2>Virtual Tour</h2><hr>
+                    <p>Come on a journey with us as we explore Harvard Forest and all it has to offer through this tour of the French Road Trail. Click on the buttons below the map to check out each stop.</p>
+                    
+                    <!-- placeholder -->
+                    <a name="map">
+                        <p> MAP GOES HERE</p>
+                    </a>
+
+                    <!-- Navigation for Trail Stops -->
+                    <ul class="list">
+                        <li><a class="btn btn-default" href="#1" role="button">
+                            <b>Stop 1</b>: 
+                            Then and Now</a></li>
+                        <li><a class="btn btn-default" href="#2" role="button">
+                            <b>Stop 2</b>: 
+                            Sugar Maples</a></li>
+                        <li><a class="btn btn-default" href="#3" role="button">
+                            <b>Stop 3</b>: T
+                            ree Diversity</a></li>
+                        <li><a class="btn btn-default" href="#4" role="button">
+                            <b>Stop 4</b>: 
+                            Land-use Legacies</a><li>
+                        <li><a class="btn btn-default" href="#5" role="button">
+                            <b>Stop 5</b>: 
+                            Disturbance</a></li>
+                        <li><a class="btn btn-default" href="#6" role="button">
+                            <b>Stop 6</b>: 
+                            Earthworms</a></li>
+                        <li><a class="btn btn-default" href="#7" role="button">
+                            <b>Stop 7</b>: 
+                            Colonial Rest Stop</a></li>
+                        <li><a class="btn btn-default" href="#8" role="button">
+                            <b>Stop 8</b>: 
+                            Stream and Stoneworks</a></li>
+                        <li><a class="btn btn-default" href="#9" role="button">
+                            <b>Stop 9</b>: 
+                            Snag</a></li>
+                        <li><a class="btn btn-default" href="#10" role="button">
+                            <b>Stop 10</b>: 
+                            Striped Maple</a></li>
+                        <li><a class="btn btn-default" href="#11" role="button">
+                            <b>Stop 11</b>: 
+                            Forest Plants</a></li>
+                        <li><a class="btn btn-default" href="#12" role="button">
+                            <b>Stop 12</b>: 
+                            American Chestnut</a></li>
+                        <li><a class="btn btn-default" href="#13" role="button">
+                            <b>Stop 13</b>: 
+                            Plantations</a></li>
+                        <li><a class="btn btn-default" href="#14" role="button">
+                            <b>Stop 14</b>: 
+                            Fire</a></li>
+                        <li><a class="btn btn-default" href="#15" role="button">
+                            <b>Stop 15</b>: 
+                            Hemlock</a></li>
+                        <li><a class="btn btn-default" href="#16" role="button">
+                            <b>Stop 16</b>: 
+                            Swamp</a></li>
+                        <li><a class="btn btn-default" href="#17" role="button">
+                            <b>Stop 17</b>: 
+                             Black Gum</a></li>
+                    </ul>
+
+
+
+
+    </section>
+</body>
