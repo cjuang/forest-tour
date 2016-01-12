@@ -5,15 +5,12 @@
 <!-- Adapted from code by Annie Lin, January 2015 -->
 
 <!-- Table of Contents
-    AA. Setting up the page
+    AA. Page Setup
     BB. Styling the page
-    CC. Styling the modals
+    CC. Styling the popups
 -->
 
-<!--
-AA. THE CODE FOR SETTING UP THE PAGE BEGINS HERE 
-Here I imported CSS and Javascript stylesheets from Bootstrap and Font-Awesome
--->
+<!-- AA. PAGE SETUP -->
 
 <head>
 
@@ -58,8 +55,7 @@ function toggle() {
 
 
 <!-- 
-BB. THE CODE FOR STYLING THE PAGE BEGINS HERE
-This is where I put elements on the page
+BB. STYLING THE PAGE
  -->
 
 <body id="page-top" class="index">
@@ -79,7 +75,7 @@ This is where I put elements on the page
                     <!-- placeholder -->
                     <a name="map">
                         <h1> MAP GOES HERE</h1>
-                    </a><hr>
+                    </a>
                     <!-- Toggle historical sites or science sites UNFINISHED!!!!!!
                     <button onclick ="toggleContent"
                     -->
@@ -149,28 +145,55 @@ This is where I put elements on the page
             <div class="row text-center">
                 <!-- Beginning of Stop 1 -->
                 <div class="col-md-4">
-                    <a name="1"><h2>STOP 1: Then and Now</h2></a>
+                    <a name="1"><h2>STOP 1</h2></a>
                     <!-- placeholder img class="img-responsive" -->
                     <h1>STOP 1 GOES HERE</h1>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1station">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Fisher Meteorological Station
+                        </a></td><br>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2raup">
+                           <i class="fa fa-history"></i>
+                           <sub><b> 2</b></sub>  Raup House
+                        </a></td><br>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#3fisher">
+                           <i class="fa fa-history"></i>
+                           <sub><b> 3</b></sub>  Fisher House
+                        </a></td><br>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#4stone">
+                           <i class="fa fa-history"></i>
+                           <sub><b> 4</b></sub>  Stone Wall
+                        </a></td><br>
+                    </table></center>
                     
-                    <a class="btn btn-default" data-toggle="modal" href="#1station">
-                        <i class="fa fa-leaf"></i>
-                        <sub><b> 1</b></sub>  Weather Station
-                    </a><br>
-                    <a class="btn btn-default" data-toggle="modal" href="#2raup">
-                        <i class="fa fa-history icon-2x"></i>
-                        <sub><b> 2</b></sub>  Raup House
-                    </a><br>
-                    <a class="btn btn-default" data-toggle="modal" href="#3fisher">
-                        <i class="fa fa-history icon-2x"></i>
-                        <sub><b> 3</b></sub>  Fisher House
-                    </a><br>
-                    <a class="btn btn-default" data-toggle="modal" href="#2stone">
-                        <i class="fa fa-history icon-2x"></i>
-                        <sub><b> 4</b></sub>  Stone Wall
-                    </a><br>
-                    
+                    <p><b>Then and Now</b><br>
+                    Text goes here</p>
                 </div>
+
+                <!-- Beginning of Stop 2 -->
+                <div class="col-md-4">
+                    <a name="1"><h2>STOP 2</h2></a>
+                    <!-- placeholder img class="img-responsive" -->
+                    <h1>STOP 2 GOES HERE</h1>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1sugar">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 1</b></sub>  Sugar Maple Tree
+                        </a></td><br>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2house">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 2</b></sub>  Sugar House
+                        </a></td><br>
+
+                    </table></center>
+                    
+                    <p><b>Sugar Maples</b><br>
+                    Text goes here</p>
+                </div>
+
             </div>
 
 
@@ -179,4 +202,155 @@ This is where I put elements on the page
 
 
     </section>
+
+<!-- CC. STYLING THE POPUPS -->
+
+<!-- Stop 1 Fisher Meteorological Station 1/4 -->
+<div class="modal fade" id="1station" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Fisher Meteorological Station</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> If you need real-time weather data, the Fisher Meteorological Station has been recording data since 2001. All data is available on the Harvard Forest website.</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 1 Raup House 2/4 -->
+<div class="modal fade" id="2raup" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Raup House</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> The Raup House, also known as the Director's House, was designed by and named after Hugh M. Raup, Harvard Forest Director (1946-1967). </p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 1 Fisher House 3/4 -->
+<div class="modal fade" id="3fisher" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Fisher House</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p>The Fisher House is named after Richard Thornton Fisher (1876-1934), the first director of Harvard Forest (1907-1934) and a professor at the Harvard Business School. The house was likely built around the time of Fisher's marriage with Georgina Paine in 1913. The houses at this stop are now dormitories for visiting students, scientists, and conference groups.</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 1 Stone Wall 4/4 -->
+<div class="modal fade" id="4stone" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Stone Wall</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> These rocks didn't stack themselves! This is a piece of the original cropland border within John and Molly Sanderson's 50-acre farm (est. 1763). The original Sanderson farmhouse, now called Community House, still stands at Harvard Forest.</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Stop 2 Sugar Maple Tree 1/2 -->
+<div class="modal fade" id="1sugar" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Sugar Maple Tree</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 2 Sugar House 2/2 -->
+<div class="modal fade" id="2house" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 1</p>
+                <h4 class="modal-title" id="myModalLabel">Sugar Maple House</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+
+</html>
