@@ -6,8 +6,9 @@
 
 <!-- Table of Contents
     AA. Page Setup
-    BB. Styling the page
-    CC. Styling the popups
+    BB. Heading
+    CC. Styling the Stops
+    DD. Styling the popups
 -->
 
 <!-- AA. PAGE SETUP -->
@@ -54,9 +55,7 @@ function toggle() {
 -->
 
 
-<!-- 
-BB. STYLING THE PAGE
- -->
+<!-- BB. HEADING -->
 
 <body id="page-top" class="index">
     <!-- The Main Display -->
@@ -90,8 +89,8 @@ BB. STYLING THE PAGE
                             <b>STOP 2</b>: 
                             Sugar Maples</a></li>
                         <li><a class="btn btn-default" href="#3" role="button">
-                            <b>STOP 3</b>: T
-                            ree Diversity</a></li>
+                            <b>STOP 3</b>: 
+                            Tree Diversity</a></li>
                         <li><a class="btn btn-default" href="#4" role="button">
                             <b>STOP 4</b>: 
                             Land-use Legacies</a><li>
@@ -141,60 +140,126 @@ BB. STYLING THE PAGE
             </div>
             <!-- End of Row 1 -->
 
+<!-- CC. STYLING THE STOPS -->
+
             <!-- Beginning of Row 2 -->
             <div class="row text-center">
                 <!-- Beginning of Stop 1 -->
                 <div class="col-md-4">
                     <a name="1"><h2>STOP 1</h2></a>
-                    <!-- placeholder img class="img-responsive" -->
-                    <h1>STOP 1 GOES HERE</h1>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Then and Now</b><br>
+                    Text goes here</p>
 
                     <center><table>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1station">
                            <i class="fa fa-leaf"></i>
                            <sub><b> 1</b></sub>  Fisher Meteorological Station
-                        </a></td><br>
+                        </a></td>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2raup">
                            <i class="fa fa-history"></i>
                            <sub><b> 2</b></sub>  Raup House
-                        </a></td><br>
+                        </a></td>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#3fisher">
                            <i class="fa fa-history"></i>
                            <sub><b> 3</b></sub>  Fisher House
-                        </a></td><br>
+                        </a></td>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#4stone">
                            <i class="fa fa-history"></i>
                            <sub><b> 4</b></sub>  Stone Wall
-                        </a></td><br>
+                        </a></td>
                     </table></center>
                     
-                    <p><b>Then and Now</b><br>
-                    Text goes here</p>
+
                 </div>
 
                 <!-- Beginning of Stop 2 -->
                 <div class="col-md-4">
-                    <a name="1"><h2>STOP 2</h2></a>
-                    <!-- placeholder img class="img-responsive" -->
-                    <h1>STOP 2 GOES HERE</h1>
+                    <a name="2"><h2>STOP 2</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Sugar Maples</b><br>
+                    Text goes here</p>
 
                     <center><table>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1sugar">
                            <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
                            <sub><b> 1</b></sub>  Sugar Maple Tree
-                        </a></td><br>
+                        </a></td>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2house">
                            <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
                            <sub><b> 2</b></sub>  Sugar House
-                        </a></td><br>
+                        </a></td>
+
+                    </table></center>
+
+                </div>
+
+                <!-- Beginning of Stop 3 -->
+                <div class="col-md-4">
+                    <a name="3"><h2>STOP 3</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Tree Diversity</b><br>
+                    Text goes here</p>
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1hardwood">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Hardwood Trees
+                        </a></td>
 
                     </table></center>
                     
-                    <p><b>Sugar Maples</b><br>
-                    Text goes here</p>
+
                 </div>
 
             </div>
+
+            <!-- Beginning of Row 3 -->
+            <div class="row text-center">
+                 <!-- Beginning of Stop 4 -->
+                <div class="col-md-4">
+                    <a name="4"><h2>STOP 4</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Land-Use Legacies</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1plot">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Research Plot
+                        </a></td>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2tilted">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 2</b></sub>  Tilted Tree
+                        </a></td>
+
+                    </table></center>
+                </div>
+
+                <!-- Beginning of Stop 5 -->
+                <div class="col-md-4">
+                    <a name="5"><h2>STOP 5</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Disturbance</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1snapped">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 1</b></sub>  Snapped and Uprooted Trees
+                        </a></td>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2redpine">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 2</b></sub>  Former Red Pine Plantation
+                        </a></td>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="cowwall">
+                            <i class="fa fa-history"></i>
+                            <sub><b> 3</b></sub>  Stone Wall
+                        </a></td>
+
+                    </table></center>
+                    
+
+                </div>               
 
 
 
@@ -203,7 +268,7 @@ BB. STYLING THE PAGE
 
     </section>
 
-<!-- CC. STYLING THE POPUPS -->
+<!-- DD. STYLING THE POPUPS -->
 
 <!-- Stop 1 Fisher Meteorological Station 1/4 -->
 <div class="modal fade" id="1station" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
@@ -313,7 +378,7 @@ BB. STYLING THE PAGE
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <p>Stop 1</p>
+                <p>Stop 2</p>
                 <h4 class="modal-title" id="myModalLabel">Sugar Maple Tree</h4>
             </div>
             <div class="modal-body">
@@ -335,8 +400,74 @@ BB. STYLING THE PAGE
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <p>Stop 1</p>
+                <p>Stop 2</p>
                 <h4 class="modal-title" id="myModalLabel">Sugar Maple House</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 3 Hardwood Trees 1/1-->
+<div class="modal fade" id="1hardwood" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 3</p>
+                <h4 class="modal-title" id="myModalLabel">Hardwood Trees</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 4 Research Plot 1/2 -->
+<div class="modal fade" id="1plot" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 4</p>
+                <h4 class="modal-title" id="myModalLabel">Research Plot</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 4 Tilted Tree 2/2 -->
+<div class="modal fade" id="2tilted" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 4</p>
+                <h4 class="modal-title" id="myModalLabel">Tilted Tree</h4>
             </div>
             <div class="modal-body">
                 <img class="img-responsive" src="img/content/1700bio.jpg">
