@@ -27,3 +27,20 @@ padding: 0px 0px 0px 0px;
 .center-img {
     margin: 0 auto;
 }
+
+/* Back to Map button */
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: box;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
