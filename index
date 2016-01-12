@@ -77,7 +77,7 @@ function toggle() {
                     <br><a href="http://harvardforest.fas.harvard.edu/" target="_blank"><img class="img-responsive center-img" src="img/logo.jpg"></a>
 
                     <h1>Harvard Forest French Road Trail</h1>
-                    <p><h2>Virtual Tour</h2><hr>
+                    <p><h2><i>The Virtual Tour</i></h2><hr>
                     <p>Come on a journey with us as we explore Harvard Forest and all it has to offer through this tour of the French Road Trail. Click on the buttons below the map to check out each stop.</p>
                     
                     <!-- placeholder -->
@@ -178,8 +178,6 @@ function toggle() {
                            <sub><b> 4</b></sub>  Stone Wall
                         </a></td>
                     </table></center>
-                    
-
                 </div>
 
                 <!-- Beginning of Stop 2 -->
@@ -203,7 +201,6 @@ function toggle() {
                             <sub><b> 3</b></sub>  Former Pool
 
                     </table></center>
-
                 </div>
 
                 <!-- Beginning of Stop 3 -->
@@ -219,8 +216,6 @@ function toggle() {
                         </a></td>
 
                     </table></center>
-                    
-
                 </div>
 
             </div>
@@ -337,7 +332,7 @@ function toggle() {
                            <i class="fa fa-history"></i>
                            <sub><b> 2</b></sub>  Terraced Land
                         </a></td>
-                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#3barn">
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#3vernal">
                             <i class="fa fa-leaf"></i>
                             <sub><b> 3</b></sub>  Vernal Pool
                         </a></td>
@@ -388,14 +383,139 @@ function toggle() {
 
                     </table></center>
                 </div>
+
+                <!-- Beginning of Stop 11 -->
+                <div class="col-md-4">
+                    <a name="11"><h2>STOP 11</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Forest Plants</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1floor">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Forest Floor
+                        </a></td>
+
+                    </table></center>
+                </div>
+
+                <!-- Beginning of Stop 12 -->
+                <div class="col-md-4">
+                    <a name="12"><h2>STOP 12</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>American Chestnut</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1chestnut">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  American Chestnut Tree
+                        </a></td>
+
+                    </table></center>
+                </div>
+
             </div>
             <!-- End of Row 5 -->
 
             <!-- Beginning of Row 6 -->
             <div class="row text-center">
+                <!-- Beginning of Stop 13 -->
+                <div class="col-md-4">
+                    <a name="13"><h2>STOP 13</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Plantations</b><br>
+                    Text goes here</p>
 
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1plantation">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 1</b></sub>  Red Pine Plantation
+                        </a></td>
+
+                    </table></center>
+                </div>
+
+                <!-- Beginning of Stop 14 -->
+                <div class="col-md-4">
+                    <a name="14"><h2>STOP 14</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Fire</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1fire">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 1</b></sub>  Fire Scars
+                        </a></td>
+
+                    </table></center>
+                </div>
+
+                <!-- Beginning of Stop 15 -->
+                <div class="col-md-4">
+                    <a name="15"><h2>STOP 15</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Hemlock</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1hemlock">
+                           <i class="fa fa-leaf"></i><i class="fa fa-history"></i>
+                           <sub><b> 1</b></sub>  Hemlock Tree
+                        </a></td>
+
+                    </table></center>
+                </div>
             </div>
             <!-- End of Row 6 -->
+
+            <!-- Beginning of Row 7 -->
+            <div class="row text-center">
+                 <!-- Beginning of Stop 16 -->
+                <div class="col-md-4">
+                    <a name="16"><h2>STOP 16</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Swamp</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1ferns">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Ferns and Mosses
+                        </a></td>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#2swamp">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 2</b></sub>  Black Gum Swamp
+                        </a></td>
+
+                    </table></center>
+                </div>
+
+                 <!-- Beginning of Stop 17 -->
+                <div class="col-md-4">
+                    <a name="17"><h2>STOP 17</h2></a>
+                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    <br><p><b>Black Gum</b><br>
+                    Text goes here</p>
+
+                    <center><table>
+                        <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1blackgum">
+                           <i class="fa fa-leaf"></i>
+                           <sub><b> 1</b></sub>  Black Gum Tree
+                        </a></td>
+                    </table></center>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!-- End of Row 7 -->
 
         </div>
         <!-- End of Container -->
@@ -985,7 +1105,181 @@ function toggle() {
     </div>
 </div>
 
+<!-- Stop 11 Forest Floor 1/1 -->
+<div class="modal fade" id="1floor" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 11</p>
+                <h4 class="modal-title" id="myModalLabel">Forest Floor</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
 
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 12 American Chestnut Tree1/1 -->
+<div class="modal fade" id="1chestnut" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 12</p>
+                <h4 class="modal-title" id="myModalLabel">American Chestnut Tree</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 13 Red Pine Plantation 1/1 -->
+<div class="modal fade" id="1plantation" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 13</p>
+                <h4 class="modal-title" id="myModalLabel">Red Pine Plantation</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 14 Fire 1/1 -->
+<div class="modal fade" id="1fire" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 14</p>
+                <h4 class="modal-title" id="myModalLabel">Fire Scars</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 15 Hemlock Tree 1/1 -->
+<div class="modal fade" id="1hemlock" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 15</p>
+                <h4 class="modal-title" id="myModalLabel">Hemlock Tree</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 16 Swamp 1/2 -->
+<div class="modal fade" id="1ferns" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 16</p>
+                <h4 class="modal-title" id="myModalLabel">Ferns and Mosses</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 16 Swamp 1/2 -->
+<div class="modal fade" id="2swamp" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 16</p>
+                <h4 class="modal-title" id="myModalLabel">Black Gum Swamp</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stop 17 Black Gum 1/1 -->
+<div class="modal fade" id="1blackgum" tabindex="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>Stop 17</p>
+                <h4 class="modal-title" id="myModalLabel">Black Gum Tree</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <p> Description</p>
+                <img class="img-responsive" src="img/content/1700bio.jpg">
+
+            </div>
+            <div class="modal-footer">
+                <button type-"button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
