@@ -1,0 +1,29 @@
+/* Links */
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+a:active {text-decoration:none}
+
+/* Button Icon Colors */
+.fa-leaf {color: #1c9739}
+.fa-leaf:hover {color: #22b847}
+
+.fa-history {color: #df6c08}
+.fa-history:hover {color: #f0740a}
+
+/* Lists */
+.list li {
+display: inline-block;
+padding: 2px 2px;
+margin: 0 0px 4px 0;
+}
+
+.list {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+
+/* Center Image */
+.center-img {
+    margin: 0 auto;
+}
