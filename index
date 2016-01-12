@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Coded by Caroline Juang, January 2016, for Harvard Forest -->
+<!-- Coded by Caroline Juang (carolinejuang @ gmail.com), January 2016, for Harvard Forest -->
 <!-- Adapted from code by Annie Lin, January 2015 -->
+
+<!-- Table of Contents
+    AA. Setting up the page
+    BB. Styling the page
+    CC. Styling the modals
+-->
+
+<!--
+AA. THE CODE FOR SETTING UP THE PAGE BEGINS HERE 
+Here I imported CSS and Javascript stylesheets from Bootstrap and Font-Awesome
+-->
 
 <head>
 
@@ -32,7 +43,24 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
 </head>
+
+<!-- Javascript to toggle the Science and Nature Tour or the Historical Tour 
+<script language="JavaScript">
+function toggle() {
+    var ele = 
+}
+</script>
+-->
+
+
+<!-- 
+BB. THE CODE FOR STYLING THE PAGE BEGINS HERE
+This is where I put elements on the page
+ -->
 
 <body id="page-top" class="index">
     <!-- The Main Display -->
@@ -50,63 +78,102 @@
                     
                     <!-- placeholder -->
                     <a name="map">
-                        <p> MAP GOES HERE</p>
-                    </a>
-
+                        <h1> MAP GOES HERE</h1>
+                    </a><hr>
+                    <!-- Toggle historical sites or science sites UNFINISHED!!!!!!
+                    <button onclick ="toggleContent"
+                    -->
+                    <hr>
+                    
                     <!-- Navigation for Trail Stops -->
-                    <ul class="list">
+                    <ol class="list">
                         <li><a class="btn btn-default" href="#1" role="button">
-                            <b>Stop 1</b>: 
+                            <b>STOP 1</b>: 
                             Then and Now</a></li>
                         <li><a class="btn btn-default" href="#2" role="button">
-                            <b>Stop 2</b>: 
+                            <b>STOP 2</b>: 
                             Sugar Maples</a></li>
                         <li><a class="btn btn-default" href="#3" role="button">
-                            <b>Stop 3</b>: T
+                            <b>STOP 3</b>: T
                             ree Diversity</a></li>
                         <li><a class="btn btn-default" href="#4" role="button">
-                            <b>Stop 4</b>: 
+                            <b>STOP 4</b>: 
                             Land-use Legacies</a><li>
                         <li><a class="btn btn-default" href="#5" role="button">
-                            <b>Stop 5</b>: 
+                            <b>STOP 5</b>: 
                             Disturbance</a></li>
                         <li><a class="btn btn-default" href="#6" role="button">
-                            <b>Stop 6</b>: 
+                            <b>STOP 6</b>: 
                             Earthworms</a></li>
                         <li><a class="btn btn-default" href="#7" role="button">
-                            <b>Stop 7</b>: 
+                            <b>STOP 7</b>: 
                             Colonial Rest Stop</a></li>
                         <li><a class="btn btn-default" href="#8" role="button">
-                            <b>Stop 8</b>: 
+                            <b>STOP 8</b>: 
                             Stream and Stoneworks</a></li>
                         <li><a class="btn btn-default" href="#9" role="button">
-                            <b>Stop 9</b>: 
+                            <b>STOP 9</b>: 
                             Snag</a></li>
                         <li><a class="btn btn-default" href="#10" role="button">
-                            <b>Stop 10</b>: 
+                            <b>STOP 10</b>: 
                             Striped Maple</a></li>
                         <li><a class="btn btn-default" href="#11" role="button">
-                            <b>Stop 11</b>: 
+                            <b>STOP 11</b>: 
                             Forest Plants</a></li>
                         <li><a class="btn btn-default" href="#12" role="button">
-                            <b>Stop 12</b>: 
+                            <b>STOP 12</b>: 
                             American Chestnut</a></li>
                         <li><a class="btn btn-default" href="#13" role="button">
-                            <b>Stop 13</b>: 
+                            <b>STOP 13</b>: 
                             Plantations</a></li>
                         <li><a class="btn btn-default" href="#14" role="button">
-                            <b>Stop 14</b>: 
+                            <b>STOP 14</b>: 
                             Fire</a></li>
                         <li><a class="btn btn-default" href="#15" role="button">
-                            <b>Stop 15</b>: 
+                            <b>STOP 15</b>: 
                             Hemlock</a></li>
                         <li><a class="btn btn-default" href="#16" role="button">
-                            <b>Stop 16</b>: 
+                            <b>STOP 16</b>: 
                             Swamp</a></li>
                         <li><a class="btn btn-default" href="#17" role="button">
-                            <b>Stop 17</b>: 
-                             Black Gum</a></li>
+                            <b>STOP 17</b>: 
+                            Black Gum</a></li>
                     </ul>
+                    <hr>
+                </div>
+                <!-- End of Intro -->
+            </div>
+            <!-- End of Row 1 -->
+
+            <!-- Beginning of Row 2 -->
+            <div class="row text-center">
+                <!-- Beginning of Stop 1 -->
+                <div class="col-md-4">
+                    <a name="1"><h2>STOP 1: Then and Now</h2></a>
+                    <!-- placeholder img class="img-responsive" -->
+                    <h1>STOP 1 GOES HERE</h1>
+                    
+                    <a class="btn btn-default" data-toggle="modal" href="#1station">
+                        <i class="fa fa-leaf"></i>
+                        <sub><b> 1</b></sub>  Weather Station
+                    </a><br>
+                    <a class="btn btn-default" data-toggle="modal" href="#2raup">
+                        <i class="fa fa-history icon-2x"></i>
+                        <sub><b> 2</b></sub>  Raup House
+                    </a><br>
+                    <a class="btn btn-default" data-toggle="modal" href="#3fisher">
+                        <i class="fa fa-history icon-2x"></i>
+                        <sub><b> 3</b></sub>  Fisher House
+                    </a><br>
+                    <a class="btn btn-default" data-toggle="modal" href="#2stone">
+                        <i class="fa fa-history icon-2x"></i>
+                        <sub><b> 4</b></sub>  Stone Wall
+                    </a><br>
+                    
+                </div>
+            </div>
+
+
 
 
 
