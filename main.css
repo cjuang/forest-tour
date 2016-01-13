@@ -44,3 +44,9 @@ padding: 0px 0px 0px 0px;
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
+
+
+/* For Carousel left and right arrows */
+.left {
+  display: none;
+}
