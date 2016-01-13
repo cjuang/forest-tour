@@ -55,15 +55,6 @@
 
 </head>
 
-<!-- Javascript to toggle the Science and Nature Tour or the Historical Tour 
-<script language="JavaScript">
-function toggle() {
-    var ele = 
-}
-</script>
--->
-
-
 <!-- BB. HEADING -->
 
 <body id="page-top" class="index">
@@ -84,9 +75,6 @@ function toggle() {
                     <a name="map">
                         <h1> MAP GOES HERE</h1>
                     </a>
-                    <!-- Toggle historical sites or science sites UNFINISHED!!!!!!
-                    <button onclick ="toggleContent"
-                    -->
                     <hr>
                     
                     <!-- Navigation for Trail Stops -->
@@ -158,12 +146,12 @@ function toggle() {
                     <a name="1"><h2>STOP 1</h2></a>
 
                     <!-- Stop 1 Look Left and Right -->
-                   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+                   <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
@@ -187,20 +175,17 @@ function toggle() {
                         </div>
                         </div>
                         <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Look Left</span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Look Right</span>
                         </a>
-                    </div>
-                    <!-- End of Look Left and Right -->
-
                     <!-- Show/Hide left and right arrows -->
                     <script language="JavaScript">
-                        $('.carousel').carousel({
+                        $('#carousel-1').carousel({
                         wrap: false
                         }).on('slid.bs.carousel', function () {
                             curSlide = $('.active');
@@ -218,6 +203,12 @@ function toggle() {
                             }
                         });
                     </script>
+
+                    </div>
+                    <!-- End of Look Left and Right -->
+
+
+
                     
                     <!-- Still Stop 1 -->
                     <br><p><b>Then and Now</b><br>
@@ -354,7 +345,73 @@ function toggle() {
                 <!-- Beginning of Stop 7 -->
                 <div class="col-md-4">
                     <a name="7"><h2>STOP 7</h2></a>
-                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
+                    
+                    <!-- Stop 7 Look Left and Right -->
+                   <div id="carousel-7" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#carousel-7" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-7" data-slide-to="1"></li>
+                        <li data-target="#carousel-7" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive center-img" alt="Left side of area" src="img/1910.jpg">
+                            <div class="carousel-caption">
+                                <p>Left side</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive center-img" alt="Center area" src="img/1910.jpg">
+                            <div class="carousel-caption">
+                                <p>Use the arrows to explore this stop more</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive center-img" alt="Right side of area" src="img/1910.jpg">
+                            <div class="carousel-caption">
+                                <p>Right side</p>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#carousel-7" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Look Left</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-7" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Look Right</span>
+                        </a>
+
+                    <!-- Show/Hide left and right arrows -->
+                    <script language="JavaScript">
+                        $('#carousel-7').carousel({
+                        wrap: false
+                        }).on('slid.bs.carousel', function () {
+                            curSlide = $('.active');
+                        if(curSlide.is( ':first-child' )) {
+                            $('.left').hide();
+                            return;
+                            } else {
+                            $('.left').show();   
+                        }
+                        if (curSlide.is( ':last-child' )) {
+                            $('.right').hide();
+                            return;
+                            } else {
+                            $('.right').show();      
+                            }
+                        });
+                    </script>
+
+                    </div>
+                    <!-- End of Look Left and Right -->
+
+
+
+                    <!-- Still Stop 7 -->
                     <br><p><b>Colonial Rest Stop</b><br>
                     Text goes here</p>
 
