@@ -50,3 +50,18 @@ padding: 0px 0px 0px 0px;
 .left {
   display: none;
 }
+/* get rid of gray boxes around arrows */
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+/* For dropdown boxes */
+.clickme {
+    background-color: #eee;
+    border-radius: 4px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
