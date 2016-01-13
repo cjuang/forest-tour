@@ -185,23 +185,21 @@
                         </a>
                     <!-- Show/Hide left and right arrows -->
                     <script language="JavaScript">
-                        $('#carousel-1').carousel({
-                        wrap: false
-                        }).on('slid.bs.carousel', function () {
-                            curSlide = $('.active');
-                        if(curSlide.is( ':first-child' )) {
-                            $('.left').hide();
-                            return;
+                        var checkitem = function() {
+                            var $this;
+                            $this = $("#carousel-1");
+                            if ($("#carousel-1 .carousel-inner .item:first").hasClass("active")) {
+                                $this.children(".left").hide();
+                                $this.children(".right").show();
+                            } else if ($("#carousel-1 .carousel-inner .item:last").hasClass("active")) {
+                                $this.children(".right").hide();
+                                $this.children(".left").show();
                             } else {
-                            $('.left').show();   
-                        }
-                        if (curSlide.is( ':last-child' )) {
-                            $('.right').hide();
-                            return;
-                            } else {
-                            $('.right').show();      
+                                $this.children(".carousel-control").show();
                             }
-                        });
+                        };
+                        checkitem();
+                        $("#carousel-1").on("slid.bs.carousel", "", checkitem);
                     </script>
 
                     </div>
@@ -387,23 +385,21 @@
 
                     <!-- Show/Hide left and right arrows -->
                     <script language="JavaScript">
-                        $('#carousel-7').carousel({
-                        wrap: false
-                        }).on('slid.bs.carousel', function () {
-                            curSlide = $('.active');
-                        if(curSlide.is( ':first-child' )) {
-                            $('.left').hide();
-                            return;
+                        var checkitem = function() {
+                            var $this;
+                            $this = $("#carousel-7");
+                            if ($("#carousel-7 .carousel-inner .item:first").hasClass("active")) {
+                                $this.children(".left").hide();
+                                $this.children(".right").show();
+                            } else if ($("#carousel-7 .carousel-inner .item:last").hasClass("active")) {
+                                $this.children(".right").hide();
+                                $this.children(".left").show();
                             } else {
-                            $('.left').show();   
-                        }
-                        if (curSlide.is( ':last-child' )) {
-                            $('.right').hide();
-                            return;
-                            } else {
-                            $('.right').show();      
+                                $this.children(".carousel-control").show();
                             }
-                        });
+                        };
+                        checkitem();
+                        $("#carousel-7").on("slid.bs.carousel", "", checkitem);
                     </script>
 
                     </div>
