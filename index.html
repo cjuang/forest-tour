@@ -52,7 +52,6 @@
     </table>
 </a>
 
-
 </head>
 
 <!-- BB. HEADING -->
@@ -459,9 +458,69 @@
                 <!-- Beginning of Stop 9 -->
                 <div class="col-md-4">
                     <a name="9"><h2>STOP 9</h2></a>
-                    <img class="img-responsive center-img" src="img/1910.jpg" alt="Image of the area">
-                    <br><p><b>Snag</b><br>
-                    Text goes here</p>
+
+                    <!-- Stop 9 Look Left and Right -->
+                   <div id="carousel-9" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#carousel-9" data-slide-to="0"></li>
+                        <li data-target="#carousel-9" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-9" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                            <img class="img-responsive center-img" alt="Left side of area" src="img/Stop-9-left.png">
+                            <div class="carousel-caption">
+                                <p align="left">Left side</p>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <img class="img-responsive center-img" alt="Center area" src="img/Stop-9-center.png">
+                            <div class="carousel-caption">
+                                <p>Use the arrows to explore this stop more</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive center-img" alt="Right side of area" src="img/Stop-9-right.png">
+                            <div class="carousel-caption">
+                                <p>Right side</p>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#carousel-9" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Look Left</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-9" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Look Right</span>
+                        </a>
+
+                    <!-- Show/Hide left and right arrows -->
+                    <script language="JavaScript">
+                        var checkitem = function() {
+                            var $this;
+                            $this = $("#carousel-9");
+                            if ($("#carousel-9 .carousel-inner .item:first").hasClass("active")) {
+                                $this.children(".left").hide();
+                                $this.children(".right").show();
+                            } else if ($("#carousel-9 .carousel-inner .item:last").hasClass("active")) {
+                                $this.children(".right").hide();
+                                $this.children(".left").show();
+                            } else {
+                                $this.children(".carousel-control").show();
+                            }
+                        };
+                        checkitem();
+                        $("#carousel-9").on("slid.bs.carousel", "", checkitem);
+                    </script>
+
+                    </div>
+                    <!-- End of Look Left and Right -->
+                    <p><b>Snag</b><br>
+                    Dying or dead tres that have not yet fallen are referred to as snags. What do you think created the small round holes you see on the trees?</p>
 
                     <center><table>
                         <tr><td><a class="btn btn-default btn-block" data-toggle="modal" href="#1snag">
@@ -1143,9 +1202,34 @@
                 <h4 class="modal-title" id="myModalLabel">Snag</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="img/content/1700bio.jpg">
-                <p> Description</p>
-                <img class="img-responsive" src="img/content/1700bio.jpg">
+                <img class="img-responsive" src="img/content/stop9-snag-CJ.png">
+                <p>Although not alive, snags are the home or food source of many living creatures and organisms. How do different animals use snags? Click each box below to find out.</p>
+
+                <!-- Dropdowns of animals in snags -->
+                <a href="#" class="clickme">Raccoons and Squirrels</a>
+                <div class="box">
+                    <p>Raccoon families and squirrels can use hollow snags as tree dens. The loose bark and slits of a snag provide warmth and shelter during the winter.</p>
+                    <img src="img/content/raccoons_tree.jpg" class="img-responsive" alt="raccoons in snag" align="center">
+                    <img src="img/content/Squirrel_snag.jpg" class="img-responsive" alt="squirrel in snag" align="center">
+                </div>
+                <a href="#" class="clickme">Pileated Woodpeckers</a>
+                <div class="box">
+                    <p>Pileated woodpeckers excavate their own nest cavities in the trunk of snags by chiseling the bark with their strong neck muscles and beveled bills. They also use snags for food by pulling away at the bark to eat the insects underneath. Unoccupied woodpecker cavities can later become cavity nests for other birds or mammals who cannot make their own cavities.</p>
+                    <img src="img/content/pileated_woodpecker_young.jpg" class="img-responsive" class="img-responsive" alt="woodpecker poking head out" align="center">
+                    <img src="img/content/Snag with Pileated Woodpecker Holes NH David Foster 2007.jpg" class="img-responsive" alt="woodpecker tree holes" align="center">
+                </div>
+                <a href="#" class="clickme">Bald Eagles</a>
+                <div class="box">
+                    <p>Bald Eagles and other raptors like to use snags as perches to rest while hunting. They also an use the limbs or cavities of snags for nesting.</p>
+                    <img src="img/content/eagles_snag.jpg" class="img-responsive" class="img-responsive" alt="eagles landing on snag" align="center">
+                </div>
+                    <a href="#" class="clickme">Wood Ducks</a>
+                <div class="box">
+                    <p>Wood ducks use snags for their nests near water. A day after wood ducklings hatch, the mother hen flies out of the cavity nest and calls out to her ducklings. The ducklings climb out of the cavity and leap from a height anywhere between 6 to 15 feet into the water below.</p>
+                    <img src="img/content/wood_ducks.jpg" class="img-responsive" class="img-responsive" alt="wood ducklings jump" align="center">
+                </div>
+
+
 
             </div>
             <div class="modal-footer">
@@ -1396,6 +1480,18 @@
         </div>
     </div>
 </div>
+
+<!-- Dropdown boxes -->
+<script language="JavaScript">
+$('.box').hide();
+$('.clickme').each(function() {
+    $(this).show(0).on('click', function(e) {
+        e.preventDefault();
+        $(this).next('.box').slideToggle('fast');
+    });
+});
+</script>
+
 
 </body>
 </html>
