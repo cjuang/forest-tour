@@ -1,3 +1,11 @@
+/* Table */
+table, th, td {
+}
+
+th, td {
+    padding: 10px;
+}
+
 /* Links */
 a:link {text-decoration:none}
 a:visited {text-decoration:none}
@@ -10,6 +18,8 @@ a:active {text-decoration:none}
 
 .fa-history {color: #df6c08}
 .fa-history:hover {color: #f0740a}
+
+.fa-circle {color: #;}
 
 /* Lists */
 .list li {
