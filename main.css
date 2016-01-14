@@ -1,9 +1,10 @@
 /* Table */
 table, th, td {
+	z-index:20;
 }
 
 th, td {
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Links */
@@ -41,14 +42,15 @@ padding: 0px 0px 0px 0px;
 /* Back to Map button */
 .go-top {
 	position: fixed;
-	bottom: 2em;
-	right: 2em;
+	bottom: 1em;
+	right: 1em;
 	text-decoration: none;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.3);
 	font-size: 12px;
-	padding: 1em;
+	padding: 0.5em;
 	display: box;
+	z-index:40;
 }
 
 .go-top:hover {
