@@ -36,13 +36,19 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- jQuery.event.move for mobile devices -->
+    <script src="js/jquery.event.move.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
+    <!-- TwentyTwenty image before/after slider -->
+    <script src="js/jquery.twentytwenty.js"></script>
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    
+    <script src="js/imagesloaded.pkgd.min.js"></script>
 
 <!-- Back to Map button -->
 <a href="#map" class="go-top">
@@ -73,7 +79,6 @@
                     <a name="map" class="mappy">
                         <img src="img/French-Trail-Map-BW.png" class="img-responsive center-img" width="600">
                     </a>
-
                     <div class="markers">
                         <a href="#1"> 
                             <span class="fa-stack fa-lg">
@@ -1188,7 +1193,11 @@
                 <h4 class="modal-title" id="myModalLabel">French Road Inn Stone Foundation</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="img/content/1700bio.jpg">
+                    <div class="twentytwenty-container">
+                        <img src="img/content/stop7-cellarinn-CJ.png" />
+                        <img src="img/content/stop7-cellarinn3D-CJ.png" />
+                    </div>
+                    <p>You are looking into the cellar of the French Road Inn. Move you mouse across the picture to see the cellar in block colors--can you find the central chimney and the small well in the back? (Photo credit: Caroline Juang (Photo credit: Caroline Juang) </p>
                 <p> Description</p>
                 <img class="img-responsive" src="img/content/1700bio.jpg">
 
@@ -1209,7 +1218,9 @@
                 <p>Stop 7</p>
                 <h4 class="modal-title" id="myModalLabel">Former Main Street</h4>
             </div>
+
             <div class="modal-body">
+
                 <img class="img-responsive" src="img/content/1700bio.jpg">
                 <p> Description</p>
                 <img class="img-responsive" src="img/content/1700bio.jpg">
@@ -1350,9 +1361,9 @@
                 <p>Although not alive, snags are the home or food source of many living creatures and organisms. How do different animals use snags? Click each box below to find out.</p>
 
                 <!-- Dropdowns of animals in snags -->
-                <a href="#" class="clickme">Raccoons and Squirrels</a>
+                <a href="#" class="clickme">Small Mammals</a>
                 <div class="box">
-                    <p>Raccoon families and squirrels can use hollow snags as tree dens. The loose bark and slits of a snag provide warmth and shelter during the winter.</p>
+                    <p>Families of raccoon, squirrel, opossum, porcupine, and many other animals (sometimes even bear) use hollow snags as tree dens. The loose bark and cavities of a snag provide warmth and shelter during the winter.</p>
                     <table>
                         <tr><td>
                             <figure><img src="img/content/raccoons_tree.jpg" class="img-responsive center-img" alt="raccoons in snag">
@@ -1366,9 +1377,9 @@
                         </td>
                     </table>
                 </div>
-                <a href="#" class="clickme">Pileated Woodpeckers</a>
+                <a href="#" class="clickme">Woodpeckers</a>
                 <div class="box">
-                    <p>Pileated woodpeckers excavate their own nest cavities in the trunk of snags by chiseling the bark with their strong neck muscles and beveled bills. They also use snags for food by pulling away at the bark to eat the insects underneath. Unoccupied woodpecker cavities can later become cavity nests for other birds or mammals who cannot make their own cavities.</p>
+                    <p>Woodpeckers--including pileated woodpeckers, the largest of their kind in North America--excavate their own nest cavities in the trunk of snags by chiseling the bark with their strong neck muscles and beveled bills. They also use snags for food by pulling away at the bark to eat the insects underneath. Unoccupied woodpecker cavities can later become cavity nests for other birds or mammals who cannot make their own cavities.</p>
                     <table>
                         <tr><td>
                             <figure>
@@ -1384,25 +1395,26 @@
                         </td>                  
                     </table>
                 </div>
-                <a href="#" class="clickme">Bald Eagles</a>
-                <div class="box">
-                    <p>Bald Eagles and other raptors like to use snags as perches to rest while hunting. They also an use the limbs or cavities of snags for nesting.</p>
-                    <figure>
-                        <img src="img/content/eagles_snag.jpg" class="img-responsive center-img" class="img-responsive center-img" alt="eagles landing on snag">
-                        <figcaption>(Photo Credit: <a href="http://wdfw.wa.gov/living/snags/" target="_blank">Washington Dept. of Fish and Wildlife</a>)</figcaption>
-                    </figure>                        
-                </div>
-                    <a href="#" class="clickme">Wood Ducks</a>
+                <a href="#" class="clickme">Wood Ducks</a>
                 <div class="box">
                     <p>Wood ducks use snags for their nests near water. A day after wood ducklings hatch, the mother hen flies out of the cavity nest and calls out to her ducklings. The ducklings climb out of the cavity and leap from a height anywhere between 6 to 15 feet into the water below.</p>
                     <figure><img src="img/content/wood_ducks.jpg" class="img-responsive center-img" alt="wood ducklings jump">
                         <figcaption>(Photo Credit: <a href="http://wdfw.wa.gov/living/snags/" target="_blank">Washington Dept. of Fish and Wildlife</a>)</figcaption>
                     </figure>
                 </div>
+                <a href="#" class="clickme">Other Birds</a>
+                <div class="box">
+                    <p>Bald Eagles and other raptors like to use snags as perches to rest while hunting. They also an use the limbs or cavities of snags for nesting. At least 85 species of North American birds (including songbirds and owls) excavate or use cavities in snags. Many of these species are in decline due to decreased habitat.</p>
+                    <figure>
+                        <img src="img/content/eagles_snag.jpg" class="img-responsive center-img" class="img-responsive center-img" alt="eagles landing on snag">
+                        <figcaption>(Photo Credit: <a href="http://wdfw.wa.gov/living/snags/" target="_blank">Washington Dept. of Fish and Wildlife</a>)</figcaption>
+                    </figure>                        
+                </div>
+
 
                 <br><h4>The More Snags, the Better</h4>
-                <p> Snags are more abundant in <b>old growth</b> structure. Old growth forests are forests that were never affected directly by humans whether through logging, agriculture, or other land uses. The forest canopies and floors are diverse in age and structure. As a result, they are important ecosystems and the habitat of many species of animals and plants, some of which can only survive in old growth conditions.</p>
-                <p> Compare this to <b>second growth</b> forests, which are forests that grew back after human land use. Clear-cutting or logging the area destroys the forest conditions that may have been adapted over thousands of years. The forest that grows back is no longer diverse and instead has even-aged, even-sized trees. Harvard Forest, like most New England Forests, are second growth forests because of NEw England colonization.</p>
+                <p> Snags are more abundant in <b>old growth</b> structure. Old growth forests are forests that were never altered directly by humans through logging. The forest canopies and floors are diverse in age and structure. Dead and wind-fallen trees decompose slowly. They are important ecosystems and the habitat of many species of animals and plants, some of which can only survive in old growth conditions. Today only about <b>0.2%</b> of New England's forests are considered to be old growth.</p>
+                <p> Compare this to <b>second growth</b> forests, which are forests that grew back after human land use. Harvard Forest, like most New England Forests, are second growth forests because of a history of European settlement, forest harvest, and agriculture.</p>
                 <p><a href="http://harvardforest.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/publications/pdfs/Damato_umassextension_2007.pdf" target="_blank">Click here</a> to read a brochure about restoring old-growth forests.</p>
                 <hr>
                 <br><h4>Learn More</h4>
@@ -1450,14 +1462,13 @@
                 <p>To read more about the Feldmans, <a href="http://masswoods.net/monthly-update/landowner-profile-ben-and-susie-feldman" target="_blank">click here.</a></p>
                 <hr><br>
                 <h4>How Can You Preserve the Forest?</h4>
-                <p>The easiest way to preserve the forest is to reduce your own environmental impact.</P>
                 <ul>
                     <li>Minimize the amount of paper you print or receive, print double-sided, reuse paper, and recycle.</li>
                     <li>Eat more locally-grown foods to reduce clear-cutting of forests for agricultural lands.</li>
                     <li>Support your <a href="http://findalandtrust.org/" target="_blank">local land trust</a></li>
                     <li>Support forest conservation work and research</li>
                 </ul>
-                <p> Did you know? In Massachusetts, you can purchase a <b>Conservation Restriction (CR) Acquisition</b> that can permanently protect a forest. Read more about CR and other ways to legally protect land for wildlife by <a href="http://www.mass.gov/eea/state-parks-beaches/land-use-and-management/land-protection/how-is-land-protected.html" target="_blank">clicking here.</a></p>  
+                <p> Did you know? If you own woods in Massachusetts, you can establish a <b>Conservation Restriction (CR)</b> that permanently protects the many environmental benefits that a forest provides. Read more about CRs and other ways to legally protect land for people and wildlife by <a href="http://www.mass.gov/eea/state-parks-beaches/land-use-and-management/land-protection/how-is-land-protected.html" target="_blank">clicking here.</a></p>  
 
             </div>
             <div class="modal-footer">
@@ -1693,15 +1704,26 @@
 
 <!-- Dropdown boxes -->
 <script language="JavaScript">
-$('.box').hide();
-$('.clickme').each(function() {
-    $(this).show(0).on('click', function(e) {
-        e.preventDefault();
+    $('.box').hide();
+    $('.clickme').each(function() {
+        $(this).show(0).on('click', function(e) {
+            e.preventDefault();
         $(this).next('.box').slideToggle('fast');
     });
 });
 </script>
 
+<script>
+$(window).load(function(){                    
+    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+</script>
+<script>
+    $('.before-after').imagesLoaded( function() {
+        $('.before-after').twentytwenty();
+    });
+</script>
 
 </body>
 </html>
