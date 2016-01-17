@@ -38,17 +38,16 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <!-- jQuery.event.move for mobile devices -->
-    <script src="js/jquery.event.move.js"></script>
+    <!-- JQuery UI Touch Punch -->
+    <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- TwentyTwenty image before/after slider -->
-    <script src="js/jquery.twentytwenty.js"></script>
-    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-    
-    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- BeforeAfter slider -->
+    <script src="js/jquery.beforeafter-1.4.min.js"></script>
+
+
 
 <!-- Back to Map button -->
 <a href="#map" class="go-top">
@@ -1193,9 +1192,10 @@
                 <h4 class="modal-title" id="myModalLabel">French Road Inn Stone Foundation</h4>
             </div>
             <div class="modal-body">
-                    <div class="twentytwenty-container">
-                        <img src="img/content/stop7-cellarinn-CJ.png" />
-                        <img src="img/content/stop7-cellarinn3D-CJ.png" />
+                   <div id="before-after">
+                        <div><img alt="before" src="img/content/stop7-cellarinn-CJ.png" width="800" height="600" /></div>
+                        <div><img alt="after" src="img/content/stop7-cellarinn3D-CJ.png" width="800" height="600"/></div>
+                   </div> 
                     </div>
                     <p>You are looking into the cellar of the French Road Inn. Move you mouse across the picture to see the cellar in block colors--can you find the central chimney and the small well in the back? (Photo credit: Caroline Juang (Photo credit: Caroline Juang) </p>
                 <p> Description</p>
@@ -1702,6 +1702,8 @@
     </div>
 </div>
 
+
+
 <!-- Dropdown boxes -->
 <script language="JavaScript">
     $('.box').hide();
@@ -1713,17 +1715,16 @@
 });
 </script>
 
-<script>
-$(window).load(function(){                    
-    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
+<script type="text/javascript">
+$(function(){
+    $('#before-after').beforeAfter();
+$('#before-after').draggable();
+
+});
+
 </script>
-<script>
-    $('.before-after').imagesLoaded( function() {
-        $('.before-after').twentytwenty();
-    });
-</script>
+
+
 
 </body>
 </html>
