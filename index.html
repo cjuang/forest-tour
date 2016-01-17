@@ -1192,12 +1192,12 @@
                 <h4 class="modal-title" id="myModalLabel">French Road Inn Stone Foundation</h4>
             </div>
             <div class="modal-body">
-                   <div id="before-after">
-                        <div><img alt="before" src="img/content/stop7-cellarinn-CJ.png" width="800" height="600" /></div>
-                        <div><img alt="after" src="img/content/stop7-cellarinn3D-CJ.png" width="800" height="600"/></div>
-                   </div> 
-                    </div>
-                    <p>You are looking into the cellar of the French Road Inn. Move you mouse across the picture to see the cellar in block colors--can you find the central chimney and the small well in the back? (Photo credit: Caroline Juang (Photo credit: Caroline Juang) </p>
+                <div id="french-inn">
+                    <img src="img/content/stop7-cellarinn3D-CJ.png" id="cellar1" alt>
+                    <div id="cellar2"></div>
+                </div>
+                    <p>You are looking into the cellar of the French Road Inn. <b>Move your mouse or your finger across the picture to see the cellar in block colors.</b> The base of the central chimney extends into the cellar. There is also a small concrete well behind the house with a stone on top of it. (Photo credit: Caroline Juang (Photo credit: Caroline Juang) </p>
+                <h4>
                 <p> Description</p>
                 <img class="img-responsive" src="img/content/1700bio.jpg">
 
@@ -1715,16 +1715,21 @@
 });
 </script>
 
-<script type="text/javascript">
-$(function(){
-    $('#before-after').beforeAfter();
-$('#before-after').draggable();
-
-});
-
+<script>
+var inkbox = document.getElementById("french-inn"),
+colorbox = document.getElementById("cellar2"),
+fillerImage = document.getElementById("cellar1");
+inkbox.addEventListener( "mousemove", trackLocation, false);
+function trackLocation(e) {
+    var rect = fillerImage.getBoundingClientRect();
+    var position = ((e.pageX - rect.left) / fillerImage.offsetWidth)*100;
+    if (position <= 100) {
+        colorbox.style.width = position+"%"; 
+    }
+}
+inkbox.addEventListener( "touchstart", trackLocation, false);
+inkbox.addEventListener( "touchmove", trackLocation, false);
 </script>
-
-
 
 </body>
 </html>
