@@ -2,7 +2,6 @@
 table, th, td {
 	z-index:20;
 }
-
 th, td {
     padding: 5px;
 }
@@ -58,17 +57,17 @@ padding: 0px 0px 0px 0px;
 }
 
 
-/* For Carousel left and right arrows */
+/* Carousel left and right arrows */
 .left {
   display: none;
 }
-/* get rid of gray boxes around arrows */
+/* Carousel - get rid of gray boxes around arrows */
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
 }
 
-/* For dropdown boxes */
+/* Dropdown boxes */
 .clickme {
     background-color: #eee;
     border-radius: 4px;
@@ -77,3 +76,32 @@ padding: 0px 0px 0px 0px;
     margin-bottom: 5px;
     padding: 5px 10px;
     text-decoration: none;
+}
+
+/* Before-After Slider */
+div#french-inn {
+	position: relative;
+	font-size: 0;
+}
+div#french-inn img {
+	width: 100%;
+	height: auto;
+}
+div#cellar2 {
+	background-image: url(stop7-cellarinn-CJ.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	background-size: cover;
+}
+div#french-inn:hover { cursor: col-resize; }
+
+iv#french-inn {
+	position: relative;
+	font-size: 0;
+	-ms-touch-action: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
