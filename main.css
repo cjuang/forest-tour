@@ -1,3 +1,46 @@
+/* Heading */
+.intro-text h2 {color:#BD362F;}
+
+/* Button Icon Colors */
+.btn-block .fa-leaf {color: #1c9739}
+.btn-block:hover .fa-leaf {color: #22b847}
+
+.btn-block .fa-history {color: #df6c08}
+.btn-block:hover .fa-history {color: #f0740a}
+
+.fa-leaf {color: #1c9739}
+.fa-leaf:hover {color: #22b847}
+
+.fa-history {color: #df6c08}
+.fa-history:hover {color: #f0740a}
+
+/* Top Menu Navigation buttons */
+.navig .btn-danger { 
+  color: #000; 
+  background-color: #F0F0F0; 
+  border-color: #EE5F5B; 
+} 
+.navig .btn-danger:hover, 
+.navig .btn-danger:focus, 
+.navig .btn-danger:active, 
+.navig .btn-danger.active, 
+.navig .open .dropdown-toggle.btn-danger { 
+  color: #000; 
+  background-color: #EE5F5B; 
+  border-color: #BD362F; 
+} 
+
+/* Lists */
+.list li {
+	display: inline-block;
+	padding: 2px 2px;
+	margin: 0 0px 4px 0;
+}
+
+.list {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
 
 /* Table */
 table, th, td {
@@ -17,48 +60,29 @@ a:active {text-decoration:none}
 .modal figcaption a {color: #bd362f;}
 .modal figcaption a:hover {color: #ee5f5b;}
 
-/* Colors and text inside Popups */
-.modal h4 {
-	font-weight: bold;
-	color: #bd362f;
-}
-
 /* Stop Headings */
 a h2 {
 	color: black;
 }
 
+/* ----------------- Popups--------------- */
+
+/* Colors and text inside Popups */
+.modal h4 {
+	font-weight: bold;
+	color: #bd362f;
+}
 /* Stop Figure Captions */
 figcaption {
 	font-style: italic;
-}
-
-/* Button Icon Colors */
-.btn-block .fa-leaf {color: #1c9739}
-.btn-block:hover .fa-leaf {color: #22b847}
-
-.btn-block .fa-history {color: #df6c08}
-.btn-block:hover .fa-history {color: #f0740a}
-
-.fa-stack .fa-circle {color: #bd362f;}
-.fa-stack:hover .fa-circle {color: #ee5f5b;}
-
-/* Lists */
-.list li {
-display: inline-block;
-padding: 2px 2px;
-margin: 0 0px 4px 0;
-}
-
-.list {
-margin: 0px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
 }
 
 /* Center Image */
 .center-img {
     margin: 0 auto;
 }
+
+/* ------------- Interactive Features ------- */
 
 /* Back to Map button */
 .go-top {
@@ -77,7 +101,6 @@ padding: 0px 0px 0px 0px;
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 /* Carousel left and right arrows */
 .left {
