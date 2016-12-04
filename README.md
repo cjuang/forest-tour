@@ -8,6 +8,7 @@ of my project as a Harvard OCS Arts and Museums Fellows Program Intern in Januar
 
 # website
 See the code in action on Harvard Forest's website, at: http://harvardforest2.fas.harvard.edu/virtualtour/index.html
+
 Press release: http://harvardforest.fas.harvard.edu/news/new-trail-and-virtual-tour
 
 # endnotes
