@@ -12,6 +12,7 @@ Press release: http://harvardforest.fas.harvard.edu/news/new-trail-and-virtual-t
 
 # endnotes
 Written January 2016, by Caroline Juang (http://carjuang.wixsite.com/portfolio)
+
 This code is not intended for commercial purposes.
 
 For inquiries, contact carolinejuang@gmail.com
